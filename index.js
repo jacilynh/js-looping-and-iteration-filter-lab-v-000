@@ -12,9 +12,9 @@ function findMatching(drivers, name) {
 // does not return drivers if only middle or ending letters match
 // does not return drivers if only middle or ending letters match
 function fuzzyMatch(drivers, letters) {
-  let stringList = letters.length
+  let string = letters.length
   return drivers.filter(function(driverName) {
-    return driverName.slice(0, stringList) === letters
+    return driverName.slice(0, string) === letters
   })
 }
 
