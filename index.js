@@ -2,8 +2,8 @@
 // returns matching drivers if case does not match but letters do
 // returns an empty array if there is no match
 function findMatching(drivers, name) {
-  return drivers.filter(function(driverName) {
-    return driverName.toLowerCase() === name.toLowerCase()
+  return drivers.filter(function(driverMatch) {
+    return driverMatch.toLowerCase() === name.toLowerCase()
   })
 }
 
