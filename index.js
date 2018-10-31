@@ -13,8 +13,8 @@ function findMatching(drivers, name) {
 // does not return drivers if only middle or ending letters match
 function fuzzyMatch(drivers, letters) {
   let string = letters.length
-  return drivers.filter(function(driverName) {
-    return driverName.slice(0, string) === letters
+  return drivers.filter(function(driverMatch) {
+    return driverMatch.slice(0, string) === letters
   })
 }
 
@@ -22,7 +22,7 @@ function fuzzyMatch(drivers, letters) {
 
 // accesses the data structure to check if name matches
  function matchName(drivers, name) {
-  return drivers.filter(function(driverName) {
-    return driverName.name === name
+  return drivers.filter(function(driverMatch) {
+    return driverMatch.name === name
   })
 }
